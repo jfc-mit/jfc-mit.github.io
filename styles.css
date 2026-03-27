@@ -235,13 +235,14 @@ header p {
 
 .author-name {
     font-family: 'Merriweather', serif;
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: var(--text-color);
     margin-bottom: 0.25rem;
     text-decoration: none;
     white-space: normal;
     text-align: center;
+    line-height: 1.2;
 }
 
 .author-name:hover {
