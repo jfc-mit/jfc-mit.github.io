@@ -424,9 +424,14 @@ header p {
 }
 
 @media (max-width: 480px) {
+    .author-profiles {
+        gap: 1rem 0.25rem;
+    }
+
     .author-card {
-        flex: 0 0 calc(33.333% - 0.5rem);
-        min-width: 90px;
+        flex: 1 1 30%;
+        max-width: 32%;
+        min-width: 0;
         margin-bottom: 0.5rem;
     }
 
