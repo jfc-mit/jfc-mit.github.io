@@ -16,306 +16,340 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 
-<body>
-
-    <div class="container">
-        <header class="animate">
-            <h1 class="animate delay-1">AI Agents Can Already Autonomously Perform Experimental High Energy Physics</h1>
-
-            <div class="author-profiles animate delay-1">
-                <div class="author-card">
-                    <a href="https://www.linkedin.com/in/eric-a-moreno/" target="_blank"
-                        style="display:block;line-height:0;"><img src="images/author_eric.jpg?v=3" class="author-image"
-                            onerror="this.src='images/placeholder_thumb.png'" alt="Eric A. Moreno"></a>
-                    <a href="https://www.linkedin.com/in/eric-a-moreno/" class="author-name" target="_blank">Eric A.
-                        Moreno<sup>1,2</sup></a>
-                    <div class="author-title">Researcher with LHC<br>Physics PhD @ MIT</div>
-                </div>
-                <div class="author-card">
-                    <a href="https://www.linkedin.com/in/sam-bright-thonney-8a5b14b4/" target="_blank"
-                        style="display:block;line-height:0;"><img src="images/author_sam.jpg?v=3" class="author-image"
-                            onerror="this.src='images/placeholder_thumb.png'" alt="Samuel Bright-Thonney"></a>
-                    <a href="https://www.linkedin.com/in/sam-bright-thonney-8a5b14b4/" class="author-name"
-                        target="_blank">Samuel Bright-Thonney<sup>1,2</sup></a>
-                    <div class="author-title">IAIFI Fellow<br>@ MIT</div>
-                </div>
-                <div class="author-card">
-                    <a href="https://www.linkedin.com/in/andrzejnovak/" target="_blank"
-                        style="display:block;line-height:0;"><img src="images/author_andrzej.jpg?v=3"
-                            class="author-image" onerror="this.src='images/placeholder_thumb.png'"
-                            alt="Andrzej Novak"></a>
-                    <a href="https://www.linkedin.com/in/andrzejnovak/" class="author-name" target="_blank">Andrzej
-                        Novak<sup>1,2</sup></a>
-                    <div class="author-title">Postdoc @ MIT<br>Particle Physics &amp; Machine Learning</div>
-                </div>
-                <div class="author-card">
-                    <a href="https://www.linkedin.com/in/dolores-garcia-500676175/" target="_blank"
-                        style="display:block;line-height:0;"><img src="images/author_dolores.jpg?v=3"
-                            class="author-image" onerror="this.src='images/placeholder_thumb.png'"
-                            alt="Dolores Garcia"></a>
-                    <a href="https://www.linkedin.com/in/dolores-garcia-500676175/" class="author-name"
-                        target="_blank">Dolores Garcia<sup>3</sup></a>
-                    <div class="author-title">Fellow<br>@ CERN</div>
-                </div>
-                <div class="author-card">
-                    <a href="https://physics.mit.edu/faculty/philip-harris/" target="_blank"
-                        style="display:block;line-height:0;"><img src="images/author_philip.jpg?v=3"
-                            class="author-image" onerror="this.src='images/placeholder_thumb.png'"
-                            alt="Philip Harris"></a>
-                    <a href="https://physics.mit.edu/faculty/philip-harris/" class="author-name" target="_blank">Philip
-                        Harris<sup>1,2</sup></a>
-                    <div class="author-title">Associate Professor<br>of Physics</div>
-                </div>
-            </div>
-
-            <div class="institutions animate delay-1"
-                style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: -1.5rem; margin-bottom: 2.5rem; line-height: 1.6;">
-                <sup>1</sup> Department of Physics, <a href="https://web.mit.edu/lns/" target="_blank"
-                    rel="noopener noreferrer"
-                    style="color: inherit; border-bottom: 1px dotted var(--text-muted); text-decoration: none;">Massachusetts
-                    Institute of Technology</a><br>
-                <sup>2</sup> <a href="https://iaifi.org/" target="_blank" rel="noopener noreferrer"
-                    style="color: inherit; border-bottom: 1px dotted var(--text-muted); text-decoration: none;">NSF AI
-                    Institute for Artificial Intelligence and Fundamental Interactions</a><br>
-                <sup>3</sup> <a href="https://home.cern/" target="_blank" rel="noopener noreferrer"
-                    style="color: inherit; border-bottom: 1px dotted var(--text-muted); text-decoration: none;">CERN</a>
-            </div>
-
-            <p class="animate delay-2">Large language model-based AI agents are now able to autonomously execute
-                substantial portions of a high energy physics analysis pipeline with minimal expert-curated input. Given
-                access to a HEP dataset, an execution framework, and a corpus of prior experimental literature, we find
-                that Claude Code succeeds in automating all stages of a typical analysis.</p>
-
-            <div class="disclaimer animate delay-2">
-                <strong>Disclaimer:</strong> The automated analyses and scientific results presented below have not yet
-                been subjected to peer review or traditional experimental collaboration review.
-            </div>
-
-            <div class="preprint-info animate delay-3"
-                style="margin-bottom: 2.5rem; color: var(--text-muted); font-size: 1.05rem; font-family: 'Merriweather', Georgia, serif; font-style: italic; border-bottom: 1px dotted var(--border-color); display: inline-block; padding-bottom: 0.25rem;">
-                Preprint published on arXiv (March 25, 2026)
-            </div>
-
-            <a href="https://arxiv.org/abs/2603.20179" class="btn btn-primary animate delay-2" target="_blank"
-                rel="noopener noreferrer">Read on ArXiv</a>
-        </header>
-
-        <div class="experiments-layout">
-
-            <!-- ALEPH Column -->
-            <div class="experiment-col">
-                <h2 class="experiment-header animate delay-2"><a href="https://home.cern/science/experiments/aleph"
-                        target="_blank"
-                        style="color: inherit; text-decoration: none; border-bottom: 2px solid var(--accent-blue);">ALEPH</a>
-                </h2>
-
-                <!-- 1. Z Lineshape -->
-                <div class="card animate delay-3">
-                    <div class="card-thumbnail"><a
-                            href="https://github.com/jfc-mit/analysis_zlineshape_alpha_s/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
-                            target="_blank"><img src="images/zlineshape.png?v=20"
-                                onerror="this.src='images/placeholder_thumb.png'"
-                                alt="Z-Boson Lineshape PDF Thumbnail"></a>
-                    </div>
-                    <h3>Z-Boson Lineshape</h3>
-                    <p>Measure the properties of the Z boson including its mass, total width, and hadronic peak cross
-                        section using a lineshape scan. The analysis incorporates a precise measurement of the thrust
-                        event shape to accurately describe the hadronic final state. Strong coupling $\alpha_s(M_Z)$ is
-                        extracted via comprehensive NLO+NLL QCD fits to the thrust distribution.</p>
-                    <div class="card-actions">
-                        <a href="https://github.com/jfc-mit/analysis_zlineshape_alpha_s/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
-                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
-                        <a href="https://github.com/jfc-mit/analysis_zlineshape_alpha_s" class="btn btn-secondary"
-                            target="_blank">GitHub Repo</a>
-                    </div>
-                </div>
-
-                <!-- 2. Lund Jet Plane -->
-                <div class="card animate delay-3">
-                    <div class="card-thumbnail"><a
-                            href="https://github.com/jfc-mit/analysis_lund_plane/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v3.pdf"
-                            target="_blank"><img src="images/lund_jet_plane.png"
-                                onerror="this.src='images/placeholder_thumb.png'"
-                                alt="Lund Jet Plane PDF Thumbnail"></a>
-                    </div>
-                    <h3>Lund Jet Plane</h3>
-                    <p>Perform a high-precision measurement of the primary Lund jet plane density using archival
-                        $e^+e^-$ collision data collected at the Z pole. The observable isolates fundamental properties
-                        of the QCD radiation pattern by mapping emissions in the kinematic phase space. Results are
-                        fully unfolded to correct for detector effects and compared against leading Monte Carlo event
-                        generators.</p>
-                    <div class="card-actions">
-                        <a href="https://github.com/jfc-mit/analysis_lund_plane/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v3.pdf"
-                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
-                        <a href="https://github.com/jfc-mit/analysis_lund_plane" class="btn btn-secondary"
-                            target="_blank">GitHub Repo</a>
-                    </div>
-                </div>
-
-                <!-- 3. EEC Correlators -->
-                <div class="card animate delay-4">
-                    <div class="card-thumbnail"><a
-                            href="https://github.com/jfc-mit/analysis_eec_correlators/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
-                            target="_blank"><img src="images/eec_correlators.png?v=20"
-                                onerror="this.src='images/placeholder_thumb.png'"
-                                alt="EEC Correlators PDF Thumbnail"></a>
-                    </div>
-                    <h3>EEC Correlators</h3>
-                    <p>Measure the two-point energy-energy correlator (EEC) directly from hadronic Z decays,
-                        representing a robust probe of collinear dynamics. The observable seamlessly connects the
-                        perturbative collinear limits described by quantum chromodynamics (QCD) with the
-                        non-perturbative behavior of hadronization. Unfolded data are leveraged to test precision
-                        theoretical calculations spanning a wide range of angular scales.</p>
-                    <div class="card-actions">
-                        <a href="https://github.com/jfc-mit/analysis_eec_correlators/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
-                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
-                        <a href="https://github.com/jfc-mit/analysis_eec_correlators" class="btn btn-secondary"
-                            target="_blank">GitHub Repo</a>
-                    </div>
-                </div>
-
-                <!-- 4. RB RC AFB -->
-                <div class="card animate delay-4">
-                    <div class="card-thumbnail"><a
-                            href="https://github.com/jfc-mit/analysis_rb_rc/blob/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v4.pdf"
-                            target="_blank"><img src="images/rb_rc_afb.png"
-                                onerror="this.src='images/placeholder_thumb.png'" alt="RB RC AFB PDF Thumbnail"></a>
-                    </div>
-                    <h3>Heavy-Flavor Electroweak Observables</h3>
-                    <p>Perform a simultaneous measurement of the heavy-flavor partial decay widths ($R_b$, $R_c$) and
-                        the forward-backward asymmetry ($A_\text{FB}^b$) of the Z boson. To reliably isolate bottom and
-                        charm quark decays, the analysis relies on an impact-parameter tagging algorithm that identifies
-                        displaced secondary vertices. This constitutes a precision test of the Standard Model
-                        electroweak sector.</p>
-                    <div class="card-actions">
-                        <a href="https://github.com/jfc-mit/analysis_rb_rc/blob/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v4.pdf"
-                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
-                        <a href="https://github.com/jfc-mit/analysis_rb_rc" class="btn btn-secondary"
-                            target="_blank">GitHub Repo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DELPHI Column -->
-            <div class="experiment-col">
-                <h2 class="experiment-header animate delay-3"><a href="https://home.cern/science/experiments/delphi"
-                        target="_blank"
-                        style="color: inherit; text-decoration: none; border-bottom: 2px solid var(--accent-blue);">DELPHI</a>
-                </h2>
-
-                <!-- 1. N_nu -->
-                <div class="card animate delay-4">
-                    <div class="card-thumbnail"><a
-                            href="https://github.com/jfc-mit/z-counting-nnu-delphi/blob/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
-                            target="_blank"><img src="images/nnu.png?v=20"
-                                onerror="this.src='images/placeholder_thumb.png'"
-                                alt="N_nu from Gamma_inv PDF Thumbnail"></a>
-                    </div>
-                    <h3>$N_\nu$ from $\Gamma_\text{inv}$</h3>
-                    <p>Determine the number of light neutrino generations ($N_\nu$) by measuring the invisible decay
-                        width of the Z boson. The analysis subtracts the visible hadronic and leptonic partial widths
-                        from the total Z width obtained via lineshape fits. The final extracted value tests the
-                        fundamental structure of the Standard Model by confirming the existence of exactly three active
-                        neutrino families.</p>
-                    <div class="card-actions">
-                        <a href="https://github.com/jfc-mit/z-counting-nnu-delphi/blob/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
-                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
-                        <a href="https://github.com/jfc-mit/z-counting-nnu-delphi" class="btn btn-secondary"
-                            target="_blank">GitHub Repo</a>
-                    </div>
-                </div>
-
-                <!-- 2. Lund Jet Plane -->
-                <div class="card animate delay-5">
-                    <div class="card-thumbnail">
-                        <img src="images/lund_plane_delphi.png?v=20" onerror="this.src='images/placeholder_thumb.png'"
-                            alt="Lund Jet Plane (DELPHI) PDF Thumbnail">
-                    </div>
-                    <h3>Lund Jet Plane</h3>
-                    <p>An independent measurement of the primary Lund jet plane density utilizing the DELPHI detector
-                        dataset, serving as a critical cross-check against ALEPH results. The analysis constructs
-                        coordinates of partonic emissions to map the intricate structure of QCD splittings in a
-                        model-independent way. Unfolded observations highlight the robust capability of AI agents to
-                        replicate complex, high-dimensionality measurements across different collaborative datasets.</p>
-                    <div class="card-actions">
-                        <a href="https://github.com/jfc-mit/lund-plane-delphi/blob/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
-                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
-                        <a href="https://github.com/jfc-mit/lund-plane-delphi" class="btn btn-secondary"
-                            target="_blank">GitHub Repo</a>
-                    </div>
-                </div>
-
-                <!-- 3. Event Shapes -->
-                <div class="card animate delay-5">
-                    <div class="card-thumbnail">
-                        <img src="images/event_shapes.png" onerror="this.src='images/placeholder_thumb.png'"
-                            alt="Event Shapes PDF Thumbnail">
-                    </div>
-                    <h3>Event Shapes &amp; $\alpha_s$</h3>
-                    <p>Characterize the geometric flow of hadronic events using six well-established event shape
-                        variables: Thrust, Heavy Jet Mass, Total Broadening, Wide Jet Broadening, C-parameter, and the
-                        Jet Resolution Parameter. The distributions are corrected for acceptance and hadronization
-                        effects. Through rigorous NLO+NLL theoretical fits, an accurate determination of the strong
-                        coupling constant $\alpha_s(M_Z)$ is achieved.</p>
-                    <div class="card-actions">
-                        <a href="https://github.com/jfc-mit/had-eventshape-alphas-delphi/blob/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
-                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
-                        <a href="https://github.com/jfc-mit/had-eventshape-alphas-delphi" class="btn btn-secondary"
-                            target="_blank">GitHub Repo</a>
-                    </div>
-                </div>
-
-                <!-- 4. Jet Substructure -->
-                <div class="card animate delay-4">
-                    <div class="card-thumbnail">
-                        <img src="images/jet_substructure.png" onerror="this.src='images/placeholder_thumb.png'"
-                            alt="Jet Substructure PDF Thumbnail">
-                    </div>
-                    <h3>Jet Substructure</h3>
-                    <p>Investigate the internal composition of jets originating from light quarks and heavy flavor
-                        decays using modern grooming techniques like Soft Drop. The measurements target essential
-                        substructure observables such as jet mass and $k_T$ splitting scales. This provides crucial
-                        insight into non-perturbative QCD phenomena and helps tune modern parton shower models.</p>
-                    <div class="card-actions">
-                        <a href="https://github.com/jfc-mit/jet-substructure-delphi/blob/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
-                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
-                        <a href="https://github.com/jfc-mit/jet-substructure-delphi" class="btn btn-secondary"
-                            target="_blank">GitHub Repo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CMS Column -->
-            <div class="experiment-col">
-                <h2 class="experiment-header animate delay-4"><a href="https://home.cern/science/experiments/cms"
-                        target="_blank">CMS</a>
-                </h2>
-
-                <div class="card animate delay-5">
-                    <div class="card-thumbnail"><a
-                            href="https://github.com/jfc-mit/higgstautau-cms-opendata/blob/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
-                            target="_blank"><img src="images/htt.png?v=50"
-                                onerror="this.src='images/placeholder_thumb.png'"
-                                alt="CMS H to tau tau PDF Thumbnail"></a>
-                    </div>
-                    <h3>H &rarr; &tau;&tau;</h3>
-                    <p>Directly probe the Yukawa coupling of the Higgs boson to fermions by measuring its signal
-                        strength in the $H \to \tau\tau$ decay channel. The analysis specifically targets the
-                        semi-leptonic $\mu\tau_h$ final state utilizing the 8 TeV CMS Open Data release. A comprehensive
-                        profile likelihood fit is performed to establish a robust measurement of this critical Standard
-                        Model parameter.</p>
-                    <div class="card-actions">
-                        <a href="https://github.com/jfc-mit/higgstautau-cms-opendata/blob/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
-                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
-                        <a href="https://github.com/jfc-mit/higgstautau-cms-opendata" class="btn btn-secondary"
-                            target="_blank">GitHub Repo</a>
-                    </div>
-                </div>
-            </div>
-
+<nav class="sticky-nav">
+    <div class="nav-content">
+        <a href="#" class="nav-logo">JFC-MIT</a>
+        <div class="nav-links">
+            <a href="#aleph">ALEPH</a>
+            <a href="#delphi">DELPHI</a>
+            <a href="#cms">CMS</a>
         </div>
+        <a href="https://arxiv.org/abs/2603.20179" class="nav-btn" target="_blank">arXiv</a>
     </div>
+</nav>
 
+<div class="container">
+    <header class="animate">
+        <h1 class="animate delay-1">AI Agents Can Already Autonomously Perform Experimental High Energy Physics</h1>
+
+        <div class="author-profiles animate delay-1">
+            <div class="author-card">
+                <a href="https://www.linkedin.com/in/eric-a-moreno/" target="_blank"
+                    style="display:block;line-height:0;"><img src="images/author_eric.jpg?v=3" class="author-image"
+                        onerror="this.src='images/placeholder_thumb.png'" alt="Eric A. Moreno"></a>
+                <a href="https://www.linkedin.com/in/eric-a-moreno/" class="author-name" target="_blank">Eric A.
+                    Moreno<sup>1,2</sup></a>
+                <div class="author-title">Researcher with LHC<br>Physics PhD @ MIT</div>
+            </div>
+            <div class="author-card">
+                <a href="https://www.linkedin.com/in/sam-bright-thonney-8a5b14b4/" target="_blank"
+                    style="display:block;line-height:0;"><img src="images/author_sam.jpg?v=3" class="author-image"
+                        onerror="this.src='images/placeholder_thumb.png'" alt="Samuel Bright-Thonney"></a>
+                <a href="https://www.linkedin.com/in/sam-bright-thonney-8a5b14b4/" class="author-name"
+                    target="_blank">Samuel Bright-Thonney<sup>1,2</sup></a>
+                <div class="author-title">IAIFI Fellow<br>@ MIT</div>
+            </div>
+            <div class="author-card">
+                <a href="https://www.linkedin.com/in/andrzejnovak/" target="_blank"
+                    style="display:block;line-height:0;"><img src="images/author_andrzej.jpg?v=3" class="author-image"
+                        onerror="this.src='images/placeholder_thumb.png'" alt="Andrzej Novak"></a>
+                <a href="https://www.linkedin.com/in/andrzejnovak/" class="author-name" target="_blank">Andrzej
+                    Novak<sup>1,2</sup></a>
+                <div class="author-title">Postdoc @ MIT<br>Particle Physics &amp; Machine Learning</div>
+            </div>
+            <div class="author-card">
+                <a href="https://www.linkedin.com/in/dolores-garcia-500676175/" target="_blank"
+                    style="display:block;line-height:0;"><img src="images/author_dolores.jpg?v=3" class="author-image"
+                        onerror="this.src='images/placeholder_thumb.png'" alt="Dolores Garcia"></a>
+                <a href="https://www.linkedin.com/in/dolores-garcia-500676175/" class="author-name"
+                    target="_blank">Dolores Garcia<sup>3</sup></a>
+                <div class="author-title">Fellow<br>@ CERN</div>
+            </div>
+            <div class="author-card">
+                <a href="https://physics.mit.edu/faculty/philip-harris/" target="_blank"
+                    style="display:block;line-height:0;"><img src="images/author_philip.jpg?v=3" class="author-image"
+                        onerror="this.src='images/placeholder_thumb.png'" alt="Philip Harris"></a>
+                <a href="https://physics.mit.edu/faculty/philip-harris/" class="author-name" target="_blank">Philip
+                    Harris<sup>1,2</sup></a>
+                <div class="author-title">Associate Professor<br>of Physics</div>
+            </div>
+        </div>
+
+        <div class="institutions animate delay-1"
+            style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: -1.5rem; margin-bottom: 2.5rem; line-height: 1.6;">
+            <sup>1</sup> Department of Physics, <a href="https://web.mit.edu/lns/" target="_blank"
+                rel="noopener noreferrer"
+                style="color: inherit; border-bottom: 1px dotted var(--text-muted); text-decoration: none;">Massachusetts
+                Institute of Technology</a><br>
+            <sup>2</sup> <a href="https://iaifi.org/" target="_blank" rel="noopener noreferrer"
+                style="color: inherit; border-bottom: 1px dotted var(--text-muted); text-decoration: none;">NSF AI
+                Institute for Artificial Intelligence and Fundamental Interactions</a><br>
+            <sup>3</sup> <a href="https://home.cern/" target="_blank" rel="noopener noreferrer"
+                style="color: inherit; border-bottom: 1px dotted var(--text-muted); text-decoration: none;">CERN</a>
+        </div>
+
+        <p class="animate delay-2">Large language model-based AI agents are now able to autonomously execute
+            substantial portions of a high energy physics analysis pipeline with minimal expert-curated input. Given
+            access to a HEP dataset, an execution framework, and a corpus of prior experimental literature, we find
+            that Claude Code succeeds in automating all stages of a typical analysis.</p>
+
+        <div class="disclaimer animate delay-2">
+            <strong>Disclaimer:</strong> The automated analyses and scientific results presented below have not yet
+            been subjected to peer review or traditional experimental collaboration review.
+        </div>
+
+        <div class="preprint-info animate delay-3"
+            style="margin-bottom: 2.5rem; color: var(--text-muted); font-size: 1.05rem; font-family: 'Inter', sans-serif; font-style: normal; border-bottom: 1px dotted var(--border-color); display: block; padding-bottom: 1rem; text-align: center;">
+            Preprint published on arXiv (March 25, 2026) <br>
+            <span style="font-size: 0.9rem; opacity: 0.8;">[Submitted on 20 Mar 2026]</span>
+        </div>
+
+        <a href="https://arxiv.org/abs/2603.20179" class="btn btn-primary animate delay-2" target="_blank"
+            rel="noopener noreferrer">Read on ArXiv</a>
+    </header>
+
+    <div class="experiments-layout">
+
+        <!-- Column 1: ALEPH -->
+        <div class="experiment-col" id="aleph">
+            <h2 class="experiment-header animate delay-2"><a href="https://home.cern/science/experiments/aleph"
+                    target="_blank"
+                    style="color: inherit; text-decoration: none; border-bottom: 2px solid var(--accent-blue);">ALEPH</a>
+            </h2>
+
+            <!-- 1. Z Lineshape -->
+            <div class="card animate delay-3">
+                <div class="card-thumbnail"><a
+                        href="https://github.com/jfc-mit/analysis_zlineshape_alpha_s/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
+                        target="_blank"><img src="images/zlineshape.png?v=20"
+                            onerror="this.src='images/placeholder_thumb.png'" alt="Z-Boson Lineshape PDF Thumbnail"></a>
+                </div>
+                <h3>Z-Boson Lineshape</h3>
+                <p>Measure the properties of the Z boson including its mass, total width, and hadronic peak cross
+                    section using a lineshape scan. The analysis incorporates a precise measurement of the thrust
+                    event shape to accurately describe the hadronic final state. Strong coupling $\alpha_s(M_Z)$ is
+                    extracted via comprehensive NLO+NLL QCD fits to the thrust distribution.</p>
+                <div class="card-actions">
+                    <a href="https://github.com/jfc-mit/analysis_zlineshape_alpha_s/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
+                        class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                    <a href="https://github.com/jfc-mit/analysis_zlineshape_alpha_s" class="btn btn-secondary"
+                        target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+
+            <!-- 2. Lund Jet Plane -->
+            <div class="card animate delay-3">
+                <div class="card-thumbnail"><a
+                        href="https://github.com/jfc-mit/analysis_lund_plane/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v3.pdf"
+                        target="_blank"><img src="images/lund_jet_plane.png"
+                            onerror="this.src='images/placeholder_thumb.png'" alt="Lund Jet Plane PDF Thumbnail"></a>
+                </div>
+                <h3>Lund Jet Plane</h3>
+                <p>Perform a high-precision measurement of the primary Lund jet plane density using archival
+                    $e^+e^-$ collision data collected at the Z pole. The observable isolates fundamental properties
+                    of the QCD radiation pattern by mapping emissions in the kinematic phase space. Results are
+                    fully unfolded to correct for detector effects and compared against leading Monte Carlo event
+                    generators.</p>
+                <div class="card-actions">
+                    <a href="https://github.com/jfc-mit/analysis_lund_plane/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v3.pdf"
+                        class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                    <a href="https://github.com/jfc-mit/analysis_lund_plane" class="btn btn-secondary"
+                        target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+
+            <!-- 3. EEC Correlators -->
+            <div class="card animate delay-4">
+                <div class="card-thumbnail"><a
+                        href="https://github.com/jfc-mit/analysis_eec_correlators/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
+                        target="_blank"><img src="images/eec_correlators.png?v=20"
+                            onerror="this.src='images/placeholder_thumb.png'" alt="EEC Correlators PDF Thumbnail"></a>
+                </div>
+                <h3>EEC Correlators</h3>
+                <p>Measure the two-point energy-energy correlator (EEC) directly from hadronic Z decays,
+                    representing a robust probe of collinear dynamics. The observable seamlessly connects the
+                    perturbative collinear limits described by quantum chromodynamics (QCD) with the
+                    non-perturbative behavior of hadronization. Unfolded data are leveraged to test precision
+                    theoretical calculations spanning a wide range of angular scales.</p>
+                <div class="card-actions">
+                    <a href="https://github.com/jfc-mit/analysis_eec_correlators/blob/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
+                        class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                    <a href="https://github.com/jfc-mit/analysis_eec_correlators" class="btn btn-secondary"
+                        target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+
+            <!-- 4. RB RC AFB -->
+            <div class="card animate delay-4">
+                <div class="card-thumbnail"><a
+                        href="https://github.com/jfc-mit/analysis_rb_rc/blob/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v4.pdf"
+                        target="_blank"><img src="images/rb_rc_afb.png"
+                            onerror="this.src='images/placeholder_thumb.png'" alt="RB RC AFB PDF Thumbnail"></a>
+                </div>
+                <h3>Heavy-Flavor Electroweak Observables</h3>
+                <p>Perform a simultaneous measurement of the heavy-flavor partial decay widths ($R_b$, $R_c$) and
+                    the forward-backward asymmetry ($A_\text{FB}^b$) of the Z boson. To reliably isolate bottom and
+                    charm quark decays, the analysis relies on an impact-parameter tagging algorithm that identifies
+                    displaced secondary vertices. This constitutes a precision test of the Standard Model
+                    electroweak sector.</p>
+                <div class="card-actions">
+                    <a href="https://github.com/jfc-mit/analysis_rb_rc/blob/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v4.pdf"
+                        class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                    <a href="https://github.com/jfc-mit/analysis_rb_rc" class="btn btn-secondary" target="_blank">GitHub
+                        Repo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 2: DELPHI -->
+        <div class="experiment-col" id="delphi">
+            <h2 class="experiment-header animate delay-3"><a href="https://home.cern/science/experiments/delphi"
+                    target="_blank"
+                    style="color: inherit; text-decoration: none; border-bottom: 2px solid var(--accent-blue);">DELPHI</a>
+            </h2>
+
+            <!-- 1. N_nu -->
+            <div class="card animate delay-4">
+                <div class="card-thumbnail"><a
+                        href="https://github.com/jfc-mit/z-counting-nnu-delphi/blob/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                        target="_blank"><img src="images/nnu.png?v=20" onerror="this.src='images/placeholder_thumb.png'"
+                            alt="N_nu from Gamma_inv PDF Thumbnail"></a>
+                </div>
+                <h3>$N_\nu$ from $\Gamma_\text{inv}$</h3>
+                <p>Determine the number of light neutrino generations ($N_\nu$) by measuring the invisible decay
+                    width of the Z boson. The analysis subtracts the visible hadronic and leptonic partial widths
+                    from the total Z width obtained via lineshape fits. The final extracted value tests the
+                    fundamental structure of the Standard Model by confirming the existence of exactly three active
+                    neutrino families.</p>
+                <div class="card-actions">
+                    <a href="https://github.com/jfc-mit/z-counting-nnu-delphi/blob/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                        class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                    <a href="https://github.com/jfc-mit/z-counting-nnu-delphi" class="btn btn-secondary"
+                        target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+
+            <!-- 2. Lund Jet Plane -->
+            <div class="card animate delay-5">
+                <div class="card-thumbnail">
+                    <img src="images/lund_plane_delphi.png?v=20" onerror="this.src='images/placeholder_thumb.png'"
+                        alt="Lund Jet Plane (DELPHI) PDF Thumbnail">
+                </div>
+                <h3>Lund Jet Plane</h3>
+                <p>An independent measurement of the primary Lund jet plane density utilizing the DELPHI detector
+                    dataset, serving as a critical cross-check against ALEPH results. The analysis constructs
+                    coordinates of partonic emissions to map the intricate structure of QCD splittings in a
+                    model-independent way. Unfolded observations highlight the robust capability of AI agents to
+                    replicate complex, high-dimensionality measurements across different collaborative datasets.</p>
+                <div class="card-actions">
+                    <a href="https://github.com/jfc-mit/lund-plane-delphi/blob/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                        class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                    <a href="https://github.com/jfc-mit/lund-plane-delphi" class="btn btn-secondary"
+                        target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+
+            <!-- 3. Event Shapes -->
+            <div class="card animate delay-5">
+                <div class="card-thumbnail">
+                    <img src="images/event_shapes.png" onerror="this.src='images/placeholder_thumb.png'"
+                        alt="Event Shapes PDF Thumbnail">
+                </div>
+                <h3>Event Shapes &amp; $\alpha_s$</h3>
+                <p>Characterize the geometric flow of hadronic events using six well-established event shape
+                    variables: Thrust, Heavy Jet Mass, Total Broadening, Wide Jet Broadening, C-parameter, and the
+                    Jet Resolution Parameter. The distributions are corrected for acceptance and hadronization
+                    effects. Through rigorous NLO+NLL theoretical fits, an accurate determination of the strong
+                    coupling constant $\alpha_s(M_Z)$ is achieved.</p>
+                <div class="card-actions">
+                    <a href="https://github.com/jfc-mit/had-eventshape-alphas-delphi/blob/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                        class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                    <a href="https://github.com/jfc-mit/had-eventshape-alphas-delphi" class="btn btn-secondary"
+                        target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+
+            <!-- 4. Jet Substructure -->
+            <div class="card animate delay-4">
+                <div class="card-thumbnail">
+                    <img src="images/jet_substructure.png" onerror="this.src='images/placeholder_thumb.png'"
+                        alt="Jet Substructure PDF Thumbnail">
+                </div>
+                <h3>Jet Substructure</h3>
+                <p>Investigate the internal composition of jets originating from light quarks and heavy flavor
+                    decays using modern grooming techniques like Soft Drop. The measurements target essential
+                    substructure observables such as jet mass and $k_T$ splitting scales. This provides crucial
+                    insight into non-perturbative QCD phenomena and helps tune modern parton shower models.</p>
+                <div class="card-actions">
+                    <a href="https://github.com/jfc-mit/jet-substructure-delphi/blob/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                        class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                    <a href="https://github.com/jfc-mit/jet-substructure-delphi" class="btn btn-secondary"
+                        target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CMS Column -->
+        <div class="experiment-col" id="cms">
+            <h2 class="experiment-header animate delay-4"><a href="https://home.cern/science/experiments/cms"
+                    target="_blank">CMS</a>
+            </h2>
+
+            <div class="card animate delay-5">
+                <div class="card-thumbnail"><a
+                        href="https://github.com/jfc-mit/higgstautau-cms-opendata/blob/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                        target="_blank"><img src="images/htt.png?v=50" onerror="this.src='images/placeholder_thumb.png'"
+                            alt="CMS H to tau tau PDF Thumbnail"></a>
+                </div>
+                <h3>H &rarr; &tau;&tau;</h3>
+                <p>Directly probe the Yukawa coupling of the Higgs boson to fermions by measuring its signal
+                    strength in the $H \to \tau\tau$ decay channel. The analysis specifically targets the
+                    semi-leptonic $\mu\tau_h$ final state utilizing the 8 TeV CMS Open Data release. A comprehensive
+                    profile likelihood fit is performed to establish a robust measurement of this critical Standard
+                    Model parameter.</p>
+                <div class="card-actions">
+                    <a href="https://github.com/jfc-mit/higgstautau-cms-opendata/blob/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                        class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                    <a href="https://github.com/jfc-mit/higgstautau-cms-opendata" class="btn btn-secondary"
+                        target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // Scroll Animation Logic
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.card, .experiment-header, .author-card').forEach(el => {
+        el.classList.add('reveal');
+        observer.observe(el);
+    });
+
+    // Sticky Nav Blur Effect on Scroll
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('.sticky-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+</script>
 </body>
 
 </html>
