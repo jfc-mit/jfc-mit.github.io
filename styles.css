@@ -203,10 +203,9 @@ header p {
 /* AUTHOR PROFILES */
 .author-profiles {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem;
-    justify-content: space-between;
+    gap: 2rem 1rem;
     margin: 3rem 0;
 }
 
@@ -215,8 +214,8 @@ header p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    flex: 1;
-    min-width: 0;
+    flex: 0 0 calc(20% - 1rem);
+    min-width: 140px;
 }
 
 .author-image {
@@ -241,7 +240,8 @@ header p {
     color: var(--text-color);
     margin-bottom: 0.25rem;
     text-decoration: none;
-    white-space: nowrap;
+    white-space: normal;
+    text-align: center;
 }
 
 .author-name:hover {
@@ -383,4 +383,52 @@ header p {
     text-align: center;
     padding: 0.6rem;
     font-size: 0.85rem;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 992px) {
+    .experiments-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .author-profiles {
+        gap: 2rem 0.5rem;
+    }
+
+    .author-card {
+        flex: 0 0 calc(33.333% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .experiments-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .author-card {
+        flex: 0 0 calc(50% - 1rem);
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .card-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .author-card {
+        flex: 0 0 100%;
+        margin-bottom: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
 }
