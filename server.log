@@ -1,0 +1,23 @@
+nohup: ignoring input
+127.0.0.1 - - [27/Mar/2026 17:43:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:43:09] "GET /images/htt.png?v=4 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:43:09] "GET /images/eec_correlators.png?v=4 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:43:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:43:16] "GET /images/htt.png?v=4 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:43:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:43:42] "GET /images/htt.png?v=4 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:43:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:43:53] "GET /styles.css?v=2 HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 17:43:53] "GET /images/eec_correlators.png?v=4 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:43:53] "GET /images/htt.png?v=4 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:44:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:44:37] "GET /images/author_eric.jpg?v=3 HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 17:44:37] "GET /images/author_sam.jpg?v=3 HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 17:44:37] "GET /images/author_andrzej.jpg?v=3 HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 17:44:37] "GET /images/author_dolores.jpg?v=3 HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 17:44:37] "GET /images/author_philip.jpg?v=3 HTTP/1.1" 304 -
+127.0.0.1 - - [27/Mar/2026 17:44:37] "GET /images/htt.png?v=4 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:44:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:44:44] "GET /images/eec_correlators.png?v=4 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:44:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2026 17:44:57] "GET /images/htt.png?v=4 HTTP/1.1" 200 -
