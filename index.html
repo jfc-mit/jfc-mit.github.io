@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agents Can Already Autonomously Perform Experimental High Energy Physics</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="animate">
+            <h1 class="animate delay-1">AI Agents Can Already Autonomously Perform Experimental High Energy Physics</h1>
+
+            <div class="authors animate delay-1">
+                Eric A. Moreno<sup>1,2</sup>, Samuel Bright-Thonney<sup>1,2</sup>, Andrzej Novak<sup>1,2</sup>, Dolores
+                Garcia<sup>3</sup>, Philip Harris<sup>1,2</sup>
+            </div>
+            <div class="institutions animate delay-1">
+                <sup>1</sup> Department of Physics, Massachusetts Institute of Technology<br>
+                <sup>2</sup> <a href="https://iaifi.org/" target="_blank" rel="noopener noreferrer">NSF AI Institute for
+                    Artificial Intelligence and Fundamental Interactions</a><br>
+                <sup>3</sup> CERN
+            </div>
+
+            <p class="animate delay-2">Large language model-based AI agents are now able to autonomously execute
+                substantial portions of a high energy physics analysis pipeline with minimal expert-curated input. Given
+                access to a HEP dataset, an execution framework, and a corpus of prior experimental literature, we find
+                that Claude Code succeeds in automating all stages of a typical analysis.</p>
+
+            <div class="disclaimer animate delay-2">
+                <strong>Disclaimer:</strong> The automated analyses and scientific results presented below have not yet
+                been subjected to peer review or traditional experimental collaboration review.
+            </div>
+
+            <a href="https://arxiv.org/abs/2603.20179" class="btn btn-primary animate delay-2" target="_blank"
+                rel="noopener noreferrer">Read on ArXiv</a>
+        </header>
+
+        <div class="experiments-layout">
+
+            <!-- ALEPH Column -->
+            <div class="experiment-col">
+                <h2 class="experiment-header animate delay-2">ALEPH</h2>
+
+                <!-- 1. Z Lineshape -->
+                <div class="card animate delay-3">
+                    <div class="card-thumbnail">
+                        <img src="images/zlineshape.png" onerror="this.src='images/placeholder_thumb.png'"
+                            alt="Z-Boson Lineshape PDF Thumbnail">
+                    </div>
+                    <h3>Z-Boson Lineshape</h3>
+                    <p>Measure Z lineshape, thrust and extract $\alpha_s(M_Z)$ via NLO+NLL QCD fits.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/jfc-mit/analysis_zlineshape_alpha_s/blob/main/analysis_note/ANALYSIS_NOTE_doc4b_v1.pdf"
+                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                        <a href="https://github.com/jfc-mit/analysis_zlineshape_alpha_s" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- 2. Lund Jet Plane -->
+                <div class="card animate delay-3">
+                    <div class="card-thumbnail">
+                        <img src="images/lund_jet_plane.png" onerror="this.src='images/placeholder_thumb.png'"
+                            alt="Lund Jet Plane PDF Thumbnail">
+                    </div>
+                    <h3>Lund Jet Plane</h3>
+                    <p>Measure the primary Lund jet plane density in hadronic Z decays.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/jfc-mit/analysis_lund_plane/blob/main/analysis_note/ANALYSIS_NOTE_doc4b_v2.pdf"
+                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                        <a href="https://github.com/jfc-mit/analysis_lund_plane" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- 3. EEC Correlators -->
+                <div class="card animate delay-4">
+                    <div class="card-thumbnail">
+                        <img src="images/eec_correlators.png" onerror="this.src='images/placeholder_thumb.png'"
+                            alt="EEC Correlators PDF Thumbnail">
+                    </div>
+                    <h3>EEC Correlators</h3>
+                    <p>Measure the two-point energy-energy correlator in hadronic Z decays.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/jfc-mit/analysis_eec_correlators/blob/main/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
+                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                        <a href="https://github.com/jfc-mit/analysis_eec_correlators" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- 4. RB RC AFB -->
+                <div class="card animate delay-4">
+                    <div class="card-thumbnail">
+                        <img src="images/rb_rc_afb.png" onerror="this.src='images/placeholder_thumb.png'"
+                            alt="RB RC AFB PDF Thumbnail">
+                    </div>
+                    <h3>RB RC AFB</h3>
+                    <p>Measure $R_b$, $R_c$, and $A_\text{FB}^b$ using impact parameter b-tagging.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/jfc-mit/analysis_rb_rc/blob/main/analysis_note/ANALYSIS_NOTE_doc4c_v2.pdf"
+                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                        <a href="https://github.com/jfc-mit/analysis_rb_rc" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DELPHI Column -->
+            <div class="experiment-col">
+                <h2 class="experiment-header animate delay-3">DELPHI</h2>
+
+                <!-- 1. N_nu -->
+                <div class="card animate delay-4">
+                    <div class="card-thumbnail">
+                        <img src="images/nnu.png" onerror="this.src='images/placeholder_thumb.png'"
+                            alt="N_nu from Gamma_inv PDF Thumbnail">
+                    </div>
+                    <h3>$N_\nu$ from $\Gamma_\text{inv}$</h3>
+                    <p>Measure the number of light neutrino generations from the Z invisible width.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/jfc-mit/z-counting-nnu-delphi/blob/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                        <a href="https://github.com/jfc-mit/z-counting-nnu-delphi" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- 2. Lund Jet Plane -->
+                <div class="card animate delay-5">
+                    <div class="card-thumbnail">
+                        <img src="images/lund_plane_delphi.png" onerror="this.src='images/placeholder_thumb.png'"
+                            alt="Lund Jet Plane (DELPHI) PDF Thumbnail">
+                    </div>
+                    <h3>Lund Jet Plane</h3>
+                    <p>Measure the primary Lund jet plane density in hadronic Z decays using DELPHI data.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/jfc-mit/lund-plane-delphi/blob/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                        <a href="https://github.com/jfc-mit/lund-plane-delphi" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- 3. Event Shapes -->
+                <div class="card animate delay-5">
+                    <div class="card-thumbnail">
+                        <img src="images/event_shapes.png" onerror="this.src='images/placeholder_thumb.png'"
+                            alt="Event Shapes PDF Thumbnail">
+                    </div>
+                    <h3>Event Shapes &amp; $\alpha_s$</h3>
+                    <p>Measure six event shape distributions and extract $\alpha_s(M_Z)$ from NLO QCD fits.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/jfc-mit/had-eventshape-alphas-delphi/blob/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                        <a href="https://github.com/jfc-mit/had-eventshape-alphas-delphi" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- 4. Jet Substructure -->
+                <div class="card animate delay-4">
+                    <div class="card-thumbnail">
+                        <img src="images/jet_substructure.png" onerror="this.src='images/placeholder_thumb.png'"
+                            alt="Jet Substructure PDF Thumbnail">
+                    </div>
+                    <h3>Jet Substructure</h3>
+                    <p>Measure groomed and ungroomed jet substructure observables in hadronic Z decays.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/jfc-mit/jet-substructure-delphi/blob/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                        <a href="https://github.com/jfc-mit/jet-substructure-delphi" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CMS Column -->
+            <div class="experiment-col">
+                <h2 class="experiment-header animate delay-4">CMS</h2>
+
+                <div class="card animate delay-5">
+                    <div class="card-thumbnail">
+                        <img src="images/htt.png" onerror="this.src='images/placeholder_thumb.png'"
+                            alt="CMS H to tau tau PDF Thumbnail">
+                    </div>
+                    <h3>H &rarr; &tau;&tau;</h3>
+                    <p>Measure the Higgs boson signal strength in the $\mu\tau_h$ final state at $\sqrt{s}=8$ TeV.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/jfc-mit/higgstautau-cms-opendata/blob/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            class="btn btn-secondary" target="_blank">Analysis Note (PDF)</a>
+                        <a href="https://github.com/jfc-mit/higgstautau-cms-opendata" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
