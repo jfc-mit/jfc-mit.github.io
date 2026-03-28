@@ -219,6 +219,31 @@ header p {
     border-radius: 4px;
 }
 
+.mobile-nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.mobile-nav a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.mobile-nav a:hover {
+    background: var(--accent-blue);
+    color: white;
+    border-color: var(--accent-blue);
+}
+
 .btn-primary {
     background: var(--accent-blue);
     color: white;
@@ -522,6 +547,10 @@ header p {
 
     .card-actions {
         flex-direction: column;
+    }
+
+    .mobile-nav {
+        display: flex;
     }
 }
 
