@@ -29,7 +29,7 @@
     <link rel="canonical" href="https://jfc-mit.github.io/">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=7">
     <script>
         MathJax = {
             tex: {
@@ -55,7 +55,9 @@
                     <a href="https://www.linkedin.com/in/eric-a-moreno/" class="author-name" target="_blank"
                         aria-label="Eric A. Moreno LinkedIn Profile">Eric A.
                         Moreno<sup>1,2,∗</sup></a>
-                    <div class="author-title">Researcher with LHC<br>Physics PhD @ MIT</div>
+                    <div class="author-title"><span class="mobile-hide">Researcher with LHC<br></span>Physics PhD @
+                        MIT
+                    </div>
                 </div>
                 <div class="author-card">
                     <a href="https://www.linkedin.com/in/sam-bright-thonney-8a5b14b4/" target="_blank"
@@ -65,7 +67,7 @@
                     <a href="https://www.linkedin.com/in/sam-bright-thonney-8a5b14b4/" class="author-name"
                         target="_blank" aria-label="Samuel Bright-Thonney LinkedIn Profile">Samuel
                         Bright-Thonney<sup>1,2,∗</sup></a>
-                    <div class="author-title">IAIFI Fellow<br>@ MIT</div>
+                    <div class="author-title">IAIFI Fellow @ MIT</div>
                 </div>
                 <div class="author-card">
                     <a href="https://www.linkedin.com/in/andrzejnovak/" target="_blank"
@@ -73,9 +75,8 @@
                             class="author-image" onerror="this.src='images/placeholder_thumb.png'"
                             alt="Andrzej Novak"></a>
                     <a href="https://www.linkedin.com/in/andrzejnovak/" class="author-name" target="_blank"
-                        aria-label="Andrzej Novak LinkedIn Profile">Andrzej
-                        Novak<sup>1,2,∗</sup></a>
-                    <div class="author-title">Postdoc @ MIT<br>Particle Physics &amp; Machine Learning</div>
+                        aria-label="Andrzej Novak LinkedIn Profile">Andrzej Novak<sup>1,2,∗</sup></a>
+                    <div class="author-title">Postdoc @ MIT<span class="mobile-hide"><br>HEP-EX &amp; ML</span></div>
                 </div>
                 <div class="author-card">
                     <a href="https://www.linkedin.com/in/dolores-garcia-500676175/" target="_blank"
@@ -85,7 +86,7 @@
                     <a href="https://www.linkedin.com/in/dolores-garcia-500676175/" class="author-name" target="_blank"
                         aria-label="Dolores Garcia LinkedIn Profile">Dolores
                         Garcia<sup>3</sup></a>
-                    <div class="author-title">Fellow<br>@ CERN</div>
+                    <div class="author-title">Fellow @ CERN</div>
                 </div>
                 <div class="author-card">
                     <a href="https://physics.mit.edu/faculty/philip-harris/" target="_blank"
@@ -95,23 +96,21 @@
                     <a href="https://physics.mit.edu/faculty/philip-harris/" class="author-name" target="_blank"
                         aria-label="Philip Harris MIT Profile">Philip
                         Harris<sup>1,2</sup></a>
-                    <div class="author-title">Associate Professor<br>of Physics</div>
+                    <div class="author-title"><span class="mobile-hide">Associate Professor<br>of Physics @
+                            MIT</span><span class="mobile-show">Assoc. Prof. of Physics @ MIT</span></div>
                 </div>
             </div>
 
-            <div class="institutions animate delay-1"
-                style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: -1.5rem; margin-bottom: 2.5rem; line-height: 1.6;">
-                <sup>1</sup> Department of Physics, <a href="https://web.mit.edu/lns/" target="_blank"
-                    rel="noopener noreferrer"
-                    style="color: inherit; border-bottom: 1px dotted var(--text-muted); text-decoration: none;">Massachusetts
-                    Institute of Technology</a><br>
-                <sup>2</sup> <a href="https://iaifi.org/" target="_blank" rel="noopener noreferrer"
-                    style="color: inherit; border-bottom: 1px dotted var(--text-muted); text-decoration: none;">NSF AI
-                    Institute for Artificial Intelligence and Fundamental Interactions</a><br>
-                <sup>3</sup> <a href="https://home.cern/" target="_blank" rel="noopener noreferrer"
-                    style="color: inherit; border-bottom: 1px dotted var(--text-muted); text-decoration: none;">CERN</a><br>
-                <span style="font-style: italic; opacity: 0.9; margin-top: 0.5rem; display: block;">∗ These authors
-                    contributed equally.</span>
+            <div class="institutions animate delay-1">
+                <sup>1</sup> <span class="mobile-hide">Department of </span>Physics, <a href="https://web.mit.edu/lns/"
+                    target="_blank" rel="noopener noreferrer"><span class="mobile-hide">Massachusetts Institute of
+                        Technology</span><span class="mobile-show">MIT</span></a><br>
+                <sup>2</sup> <a href="https://iaifi.org/" target="_blank" rel="noopener noreferrer"><span
+                        class="mobile-hide">NSF AI
+                        Institute for Artificial Intelligence and Fundamental Interactions</span><span
+                        class="mobile-show">IAIFI</span></a><br>
+                <sup>3</sup> <a href="https://home.cern/" target="_blank" rel="noopener noreferrer">CERN</a><br>
+                <span class="equal-contribution">∗ These authors contributed equally.</span>
             </div>
 
             <p class="animate delay-2">Large language model-based AI agents are now able to autonomously execute
@@ -120,12 +119,13 @@
                 automating all stages of a typical analysis across the ALEPH, DELPHI, and CMS experiments. Our
                 demonstration of nine distinct autonomous measurements suggests a coming shift in how data analysis
                 and scientific software are developed in the field.</p>
-        <div class="vision-figure animate delay-2" style="margin: 3rem auto; max-width: 900px; text-align: center;">
-            <img src="images/vision_workflow.png?v=1" alt="AI-agent workflow vs Typical HEP analysis workflow" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid var(--border-color);">
-            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem; font-style: italic;">
-                <strong>Figure 1:</strong> Diagram of how an AI-agent workflow (JFC) mirrors the typical high-energy physics analysis pipeline.
-            </p>
-        </div>
+            <div class="vision-figure animate delay-2">
+                <img src="images/vision_workflow.png?v=1" alt="AI-agent workflow vs Typical HEP analysis workflow">
+                <p class="vision-caption">
+                    <strong>Figure 1:</strong> Diagram of how an AI-agent workflow (JFC) mirrors the typical high-energy
+                    physics analysis pipeline.
+                </p>
+            </div>
 
 
             <div class="disclaimer animate delay-2">
@@ -133,10 +133,9 @@
                 been subjected to peer review or traditional experimental collaboration review.
             </div>
 
-            <div class="preprint-info animate delay-3"
-                style="margin-bottom: 2.5rem; color: var(--text-muted); font-size: 1.05rem; font-family: 'Inter', sans-serif; font-style: normal; border-bottom: 1px dotted var(--border-color); display: block; padding-bottom: 1rem; text-align: center;">
+            <div class="preprint-info animate delay-3">
                 Preprint published on arXiv (March 23, 2026) <br>
-                <span style="font-size: 0.9rem; opacity: 0.8;">[Submitted on 20 Mar 2026]</span>
+                <span>[Submitted on 20 Mar 2026]</span>
             </div>
 
             <a href="https://arxiv.org/abs/2603.20179" class="btn btn-primary animate delay-2" target="_blank"
@@ -155,8 +154,8 @@
                 <!-- 1. Z Lineshape -->
                 <div class="card animate delay-3">
                     <div class="card-thumbnail"><a
-                            href="https://raw.githubusercontent.com/jfc-mit/analysis_zlineshape_alpha_s/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf" download
-                            target="_blank"><img src="images/zlineshape.png?v=20"
+                            href="https://raw.githubusercontent.com/jfc-mit/analysis_zlineshape_alpha_s/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
+                            download target="_blank"><img src="images/zlineshape.png?v=20"
                                 onerror="this.src='images/placeholder_thumb.png'"
                                 alt="Z-Boson Lineshape PDF Thumbnail"></a>
                     </div>
@@ -166,8 +165,9 @@
                         event shape to accurately describe the hadronic final state. Strong coupling $\alpha_s(M_Z)$ is
                         extracted via comprehensive NLO+NLL QCD fits to the thrust distribution.</p>
                     <div class="card-actions">
-                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_zlineshape_alpha_s/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf" download
-                            class="btn btn-secondary" aria-label="View Analysis Note PDF" target="_blank">Analysis Note
+                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_zlineshape_alpha_s/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
+                            download class="btn btn-secondary" aria-label="View Analysis Note PDF"
+                            target="_blank">Analysis Note
                             (PDF)</a>
                         <a href="https://github.com/jfc-mit/analysis_zlineshape_alpha_s" class="btn btn-secondary"
                             aria-label="View Analysis Note PDF" target="_blank">GitHub Repo</a>
@@ -177,8 +177,8 @@
                 <!-- 2. Lund Jet Plane -->
                 <div class="card animate delay-3">
                     <div class="card-thumbnail"><a
-                            href="https://raw.githubusercontent.com/jfc-mit/analysis_lund_plane/master/analysis_note/ANALYSIS_NOTE_doc4c_v3.pdf" download
-                            target="_blank"><img src="images/lund_jet_plane.png"
+                            href="https://raw.githubusercontent.com/jfc-mit/analysis_lund_plane/master/analysis_note/ANALYSIS_NOTE_doc4c_v3.pdf"
+                            download target="_blank"><img src="images/lund_jet_plane.png"
                                 onerror="this.src='images/placeholder_thumb.png'"
                                 alt="Lund Jet Plane PDF Thumbnail"></a>
                     </div>
@@ -189,8 +189,9 @@
                         fully unfolded to correct for detector effects and compared against leading Monte Carlo event
                         generators.</p>
                     <div class="card-actions">
-                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_lund_plane/master/analysis_note/ANALYSIS_NOTE_doc4c_v3.pdf" download
-                            class="btn btn-secondary" aria-label="View Analysis Note PDF" target="_blank">Analysis Note
+                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_lund_plane/master/analysis_note/ANALYSIS_NOTE_doc4c_v3.pdf"
+                            download class="btn btn-secondary" aria-label="View Analysis Note PDF"
+                            target="_blank">Analysis Note
                             (PDF)</a>
                         <a href="https://github.com/jfc-mit/analysis_lund_plane" class="btn btn-secondary"
                             aria-label="View Analysis Note PDF" target="_blank">GitHub Repo</a>
@@ -200,8 +201,8 @@
                 <!-- 3. EEC Correlators -->
                 <div class="card animate delay-4">
                     <div class="card-thumbnail"><a
-                            href="https://raw.githubusercontent.com/jfc-mit/analysis_eec_correlators/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf" download
-                            target="_blank"><img src="images/eec_correlators.png?v=20"
+                            href="https://raw.githubusercontent.com/jfc-mit/analysis_eec_correlators/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
+                            download target="_blank"><img src="images/eec_correlators.png?v=20"
                                 onerror="this.src='images/placeholder_thumb.png'"
                                 alt="EEC Correlators PDF Thumbnail"></a>
                     </div>
@@ -212,8 +213,9 @@
                         non-perturbative behavior of hadronization. Unfolded data are leveraged to test precision
                         theoretical calculations spanning a wide range of angular scales.</p>
                     <div class="card-actions">
-                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_eec_correlators/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf" download
-                            class="btn btn-secondary" aria-label="View Analysis Note PDF" target="_blank">Analysis Note
+                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_eec_correlators/master/analysis_note/ANALYSIS_NOTE_doc4c_v1.pdf"
+                            download class="btn btn-secondary" aria-label="View Analysis Note PDF"
+                            target="_blank">Analysis Note
                             (PDF)</a>
                         <a href="https://github.com/jfc-mit/analysis_eec_correlators" class="btn btn-secondary"
                             aria-label="View Analysis Note PDF" target="_blank">GitHub Repo</a>
@@ -223,8 +225,8 @@
                 <!-- 4. RB RC AFB -->
                 <div class="card animate delay-4">
                     <div class="card-thumbnail"><a
-                            href="https://raw.githubusercontent.com/jfc-mit/analysis_rb_rc/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v4.pdf" download
-                            target="_blank"><img src="images/rb_rc_afb.png"
+                            href="https://raw.githubusercontent.com/jfc-mit/analysis_rb_rc/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v4.pdf"
+                            download target="_blank"><img src="images/rb_rc_afb.png"
                                 onerror="this.src='images/placeholder_thumb.png'" alt="RB RC AFB PDF Thumbnail"></a>
                     </div>
                     <h3>Heavy-Flavor Electroweak Observables</h3>
@@ -234,8 +236,9 @@
                         displaced secondary vertices. This constitutes a precision test of the Standard Model
                         electroweak sector.</p>
                     <div class="card-actions">
-                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_rb_rc/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v4.pdf" download
-                            class="btn btn-secondary" aria-label="View Analysis Note PDF" target="_blank">Analysis Note
+                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_rb_rc/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v4.pdf"
+                            download class="btn btn-secondary" aria-label="View Analysis Note PDF"
+                            target="_blank">Analysis Note
                             (PDF)</a>
                         <a href="https://github.com/jfc-mit/analysis_rb_rc" class="btn btn-secondary"
                             aria-label="View Analysis Note PDF" target="_blank">GitHub
@@ -254,8 +257,8 @@
                 <!-- 1. N_nu -->
                 <div class="card animate delay-4">
                     <div class="card-thumbnail"><a
-                            href="https://raw.githubusercontent.com/jfc-mit/z-counting-nnu-delphi/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf" download
-                            target="_blank"><img src="images/nnu.png?v=20"
+                            href="https://raw.githubusercontent.com/jfc-mit/z-counting-nnu-delphi/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            download target="_blank"><img src="images/nnu.png?v=20"
                                 onerror="this.src='images/placeholder_thumb.png'"
                                 alt="N_nu from Gamma_inv PDF Thumbnail"></a>
                     </div>
@@ -266,8 +269,9 @@
                         fundamental structure of the Standard Model by confirming the existence of exactly three active
                         neutrino families.</p>
                     <div class="card-actions">
-                        <a href="https://raw.githubusercontent.com/jfc-mit/z-counting-nnu-delphi/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf" download
-                            class="btn btn-secondary" aria-label="View Analysis Note PDF" target="_blank">Analysis Note
+                        <a href="https://raw.githubusercontent.com/jfc-mit/z-counting-nnu-delphi/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            download class="btn btn-secondary" aria-label="View Analysis Note PDF"
+                            target="_blank">Analysis Note
                             (PDF)</a>
                         <a href="https://github.com/jfc-mit/z-counting-nnu-delphi" class="btn btn-secondary"
                             aria-label="View Analysis Note PDF" target="_blank">GitHub Repo</a>
@@ -287,8 +291,9 @@
                         model-independent way. Unfolded observations highlight the robust capability of AI agents to
                         replicate complex, high-dimensionality measurements across different collaborative datasets.</p>
                     <div class="card-actions">
-                        <a href="https://raw.githubusercontent.com/jfc-mit/lund-plane-delphi/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf" download
-                            class="btn btn-secondary" aria-label="View Analysis Note PDF" target="_blank">Analysis Note
+                        <a href="https://raw.githubusercontent.com/jfc-mit/lund-plane-delphi/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            download class="btn btn-secondary" aria-label="View Analysis Note PDF"
+                            target="_blank">Analysis Note
                             (PDF)</a>
                         <a href="https://github.com/jfc-mit/lund-plane-delphi" class="btn btn-secondary"
                             aria-label="View Analysis Note PDF" target="_blank">GitHub
@@ -309,8 +314,9 @@
                         effects. Through rigorous NLO+NLL theoretical fits, an accurate determination of the strong
                         coupling constant $\alpha_s(M_Z)$ is achieved.</p>
                     <div class="card-actions">
-                        <a href="https://raw.githubusercontent.com/jfc-mit/had-eventshape-alphas-delphi/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf" download
-                            class="btn btn-secondary" aria-label="View Analysis Note PDF" target="_blank">Analysis Note
+                        <a href="https://raw.githubusercontent.com/jfc-mit/had-eventshape-alphas-delphi/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            download class="btn btn-secondary" aria-label="View Analysis Note PDF"
+                            target="_blank">Analysis Note
                             (PDF)</a>
                         <a href="https://github.com/jfc-mit/had-eventshape-alphas-delphi" class="btn btn-secondary"
                             aria-label="View Analysis Note PDF" target="_blank">GitHub Repo</a>
@@ -329,8 +335,9 @@
                         substructure observables such as jet mass and $k_T$ splitting scales. This provides crucial
                         insight into non-perturbative QCD phenomena and helps tune modern parton shower models.</p>
                     <div class="card-actions">
-                        <a href="https://raw.githubusercontent.com/jfc-mit/jet-substructure-delphi/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf" download
-                            class="btn btn-secondary" aria-label="View Analysis Note PDF" target="_blank">Analysis Note
+                        <a href="https://raw.githubusercontent.com/jfc-mit/jet-substructure-delphi/master/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            download class="btn btn-secondary" aria-label="View Analysis Note PDF"
+                            target="_blank">Analysis Note
                             (PDF)</a>
                         <a href="https://github.com/jfc-mit/jet-substructure-delphi" class="btn btn-secondary"
                             aria-label="View Analysis Note PDF" target="_blank">GitHub Repo</a>
@@ -346,8 +353,8 @@
 
                 <div class="card animate delay-5">
                     <div class="card-thumbnail"><a
-                            href="https://raw.githubusercontent.com/jfc-mit/higgstautau-cms-opendata/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf" download
-                            target="_blank"><img src="images/htt.png?v=50"
+                            href="https://raw.githubusercontent.com/jfc-mit/higgstautau-cms-opendata/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            download target="_blank"><img src="images/htt.png?v=50"
                                 onerror="this.src='images/placeholder_thumb.png'"
                                 alt="CMS H to tau tau PDF Thumbnail"></a>
                     </div>
@@ -358,8 +365,9 @@
                         profile likelihood fit is performed to establish a robust measurement of this critical Standard
                         Model parameter.</p>
                     <div class="card-actions">
-                        <a href="https://raw.githubusercontent.com/jfc-mit/higgstautau-cms-opendata/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf" download
-                            class="btn btn-secondary" aria-label="View Analysis Note PDF" target="_blank">Analysis Note
+                        <a href="https://raw.githubusercontent.com/jfc-mit/higgstautau-cms-opendata/main/phase5_documentation/exec/ANALYSIS_NOTE.pdf"
+                            download class="btn btn-secondary" aria-label="View Analysis Note PDF"
+                            target="_blank">Analysis Note
                             (PDF)</a>
                         <a href="https://github.com/jfc-mit/higgstautau-cms-opendata" class="btn btn-secondary"
                             aria-label="View Analysis Note PDF" target="_blank">GitHub Repo</a>
