@@ -502,7 +502,9 @@ header p {
 
 @media (max-width: 480px) {
     .author-profiles {
-        gap: 1rem 0.25rem;
+        gap: 1rem 2%;
+        width: 100%;
+        padding: 0 0.25rem;
     }
 
     .author-card {
@@ -513,12 +515,13 @@ header p {
     }
 
     .author-image {
-        width: 60px;
-        height: 60px;
+        width: 52px;
+        height: 52px;
     }
 
     .author-name {
-        font-size: 0.65rem;
+        font-size: 0.54rem;
+        letter-spacing: -0.01em;
     }
 
     .author-title {
