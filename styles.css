@@ -242,6 +242,19 @@ header p {
     box-shadow: 0 4px 12px rgba(27, 58, 92, 0.15);
 }
 
+.btn-accent {
+    background: var(--accent-red);
+    color: white;
+    border: 1px solid var(--accent-red);
+    box-shadow: 0 4px 12px rgba(139, 40, 40, 0.2);
+}
+
+.btn-accent:hover {
+    background: #702020;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(139, 40, 40, 0.3);
+}
+
 /* COLUMN LAYOUT */
 .experiments-layout {
     display: grid;
