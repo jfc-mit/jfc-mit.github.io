@@ -342,7 +342,7 @@ header p {
 }
 
 .author-title {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -574,12 +574,12 @@ header p {
     }
 
     .author-name {
-        font-size: 0.54rem;
+        font-size: 0.58rem;
         letter-spacing: -0.01em;
     }
 
     .author-title {
-        font-size: 0.55rem;
+        font-size: 0.48rem;
     }
 
     .mobile-hide {
