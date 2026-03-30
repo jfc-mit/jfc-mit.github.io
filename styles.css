@@ -282,6 +282,19 @@ header p {
     box-shadow: 0 6px 16px rgba(139, 40, 40, 0.3);
 }
 
+.btn-github {
+    background: #24292e;
+    color: white;
+    border: 1px solid #24292e;
+    box-shadow: 0 4px 12px rgba(36, 41, 46, 0.2);
+}
+
+.btn-github:hover {
+    background: #1b1f23;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(36, 41, 46, 0.3);
+}
+
 .institutions:hover {
     color: var(--text-color);
 }
