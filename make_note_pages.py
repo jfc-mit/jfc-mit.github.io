@@ -48,7 +48,7 @@ PAGE = """<!DOCTYPE html>
 <meta name="description" content="{pages}-page agent-written, agent-reviewed analysis note: {title_en}.">
 <link rel="icon" type="image/png" href="../../images/favicon.png">
 <style>
-  :root{{ color-scheme: light dark; }}
+  :root{{ color-scheme: light; }}
   *{{ margin:0; padding:0; box-sizing:border-box; }}
   body{{ font-family:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
     background:#fff; color:#131417; line-height:1.5;
@@ -70,14 +70,6 @@ PAGE = """<!DOCTYPE html>
   .foot{{ font-size:.72rem; color:#6B7280; border-top:1px solid #D9D9D4; padding-top:.8rem;
     display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; }}
   .foot a{{ color:#6B7280; }}
-  @media (prefers-color-scheme: dark){{
-    body{{ background:#131417; color:#E8EDF2; }}
-    .eyebrow{{ border-color:#E8EDF2; color:#9AA3AD; }}
-    .meta, .foot{{ color:#9AA3AD; }}
-    a.btn{{ border-color:#E8EDF2; color:#E8EDF2; }}
-    a.btn.primary{{ background:#E8EDF2; color:#131417; }}
-    .foot{{ border-color:#3A4550; }} .foot a{{ color:#9AA3AD; }}
-  }}
 </style>
 </head>
 <body>
