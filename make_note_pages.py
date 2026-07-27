@@ -86,6 +86,7 @@ PAGE = """<!DOCTYPE html>
       <span><a href="https://arxiv.org/abs/2603.20179">arXiv:2603.20179</a></span>
     </div>
   </div>
+  <script data-goatcounter="https://jfc-mit.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 """
