@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Agentes de IA já conseguem realizar de forma autônoma física experimental de altas energias, usando o framework Just Furnish Context (JFC). Seis medidas autônomas com dados do ALEPH, do DELPHI e do CMS.">
+    <meta name="keywords"
+        content="JFC MIT, Just Furnish Context, física de altas energias, agentes de IA, física autônoma, CMS, ALEPH, DELPHI, aprendizado de máquina, automação científica, ICHEP 2026, Natal">
+    <meta name="author" content="Eric A. Moreno, Samuel Bright-Thonney, Andrzej Novak, Dolores Garcia, Yiyang Zhao, Philip Harris">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jfc-mit.github.io/pt/">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="JFC MIT | Agentes de IA para física experimental de altas energias">
+    <meta property="og:description"
+        content="JFC MIT: análise de física autônoma com dados do ALEPH, do DELPHI e do CMS usando o framework Just Furnish Context.">
+    <meta property="og:image" content="https://jfc-mit.github.io/images/htt.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jfc-mit.github.io/pt/">
+    <meta property="twitter:title" content="JFC MIT | Agentes de IA para física experimental de altas energias">
+    <meta property="twitter:description"
+        content="JFC MIT: análise de física autônoma com dados do ALEPH, do DELPHI e do CMS usando o framework Just Furnish Context.">
+    <meta property="twitter:image" content="https://jfc-mit.github.io/images/htt.png">
+
+    <link rel="canonical" href="https://jfc-mit.github.io/pt/">
+    <link rel="alternate" hreflang="en" href="https://jfc-mit.github.io/">
+    <link rel="alternate" hreflang="pt-BR" href="https://jfc-mit.github.io/pt/">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <link rel="stylesheet" href="../styles.css?v=23">
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+
+<body>
+
+    <div class="lang-switch" style="max-width:1200px;margin:0 auto;padding:0.9rem 1.2rem 0;
+        display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;
+        font-size:0.85rem;opacity:0.85;">
+        <span>Versão em português &middot; <a href="../">Read this page in English</a></span>
+        <span>ICHEP&nbsp;2026 &middot; Natal &middot; pôster&nbsp;#1158</span>
+    </div>
+
+    <div class="container">
+        <header class="animate">
+            <h1 class="animate delay-1">Agentes de IA já realizam, de forma autônoma, física experimental de altas energias</h1>
+
+            <div class="author-profiles animate delay-1">
+                <div class="author-card">
+                    <div class="author-img-wrap">
+                        <a href="https://www.linkedin.com/in/eric-a-moreno/" target="_blank"
+                            style="display:block;line-height:0;" aria-label="Eric A. Moreno LinkedIn Profile"><img
+                                src="../images/author_eric.jpg?v=3" class="author-image"
+                                onerror="this.src='../images/placeholder_thumb.png'" alt="Eric A. Moreno"></a>
+                        <a href="https://orcid.org/0000-0001-5666-3637" target="_blank" rel="noopener noreferrer"
+                            class="orcid-badge" aria-label="Eric A. Moreno ORCID profile"><img
+                                src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"
+                                width="16" height="16"></a>
+                    </div>
+                    <a href="https://www.linkedin.com/in/eric-a-moreno/" class="author-name" target="_blank"
+                        aria-label="Eric A. Moreno LinkedIn Profile">Eric A.
+                        Moreno<sup>1,2,∗</sup></a>
+                    <div class="author-title">Doutorando em Física @ MIT</div>
+                </div>
+                <div class="author-card">
+                    <div class="author-img-wrap">
+                        <a href="https://www.linkedin.com/in/sam-bright-thonney-8a5b14b4/" target="_blank"
+                            style="display:block;line-height:0;" aria-label="Samuel Bright-Thonney LinkedIn Profile"><img
+                                src="../images/author_sam.jpg?v=3" class="author-image"
+                                onerror="this.src='../images/placeholder_thumb.png'" alt="Samuel Bright-Thonney"></a>
+                        <a href="https://orcid.org/0000-0003-1889-7824" target="_blank" rel="noopener noreferrer"
+                            class="orcid-badge" aria-label="Samuel Bright-Thonney ORCID profile"><img
+                                src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"
+                                width="16" height="16"></a>
+                    </div>
+                    <a href="https://www.linkedin.com/in/sam-bright-thonney-8a5b14b4/" class="author-name"
+                        target="_blank" aria-label="Samuel Bright-Thonney LinkedIn Profile">Samuel
+                        Bright-Thonney<sup>1,2,∗</sup></a>
+                    <div class="author-title">Pesquisador IAIFI @ MIT</div>
+                </div>
+                <div class="author-card">
+                    <div class="author-img-wrap">
+                        <a href="https://www.linkedin.com/in/andrzejnovak/" target="_blank"
+                            style="display:block;line-height:0;"><img src="../images/author_andrzej.jpg?v=3"
+                                class="author-image" onerror="this.src='../images/placeholder_thumb.png'"
+                                alt="Andrzej Novak"></a>
+                        <a href="https://orcid.org/0000-0002-0389-5896" target="_blank" rel="noopener noreferrer"
+                            class="orcid-badge" aria-label="Andrzej Novak ORCID profile"><img
+                                src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"
+                                width="16" height="16"></a>
+                    </div>
+                    <a href="https://www.linkedin.com/in/andrzejnovak/" class="author-name" target="_blank"
+                        aria-label="Andrzej Novak LinkedIn Profile">Andrzej Novak<sup>1,2,∗</sup></a>
+                    <div class="author-title">Pós-doutorando @ MIT</div>
+                </div>
+                <div class="author-card">
+                    <div class="author-img-wrap">
+                        <a href="https://www.linkedin.com/in/dolores-garcia-500676175/" target="_blank"
+                            style="display:block;line-height:0;"><img src="../images/author_dolores.jpg?v=3"
+                                class="author-image" onerror="this.src='../images/placeholder_thumb.png'"
+                                alt="Dolores Garcia"></a>
+                        <a href="https://orcid.org/0000-0002-0120-8757" target="_blank" rel="noopener noreferrer"
+                            class="orcid-badge" aria-label="Dolores Garcia ORCID profile"><img
+                                src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"
+                                width="16" height="16"></a>
+                    </div>
+                    <a href="https://www.linkedin.com/in/dolores-garcia-500676175/" class="author-name" target="_blank"
+                        aria-label="Dolores Garcia LinkedIn Profile">Dolores
+                        Garcia<sup>3</sup></a>
+                    <div class="author-title">Fellow do CERN</div>
+                </div>
+                <div class="author-card">
+                    <div class="author-img-wrap">
+                        <a href="https://orcid.org/0009-0000-2290-1828" target="_blank" rel="noopener noreferrer"
+                            style="display:block;line-height:0;" aria-label="Yiyang Zhao ORCID profile"><img
+                                src="../images/author_yiyang.jpg?v=1" class="author-image"
+                                onerror="this.src='../images/placeholder_thumb.png'" alt="Yiyang Zhao"></a>
+                        <a href="https://orcid.org/0009-0000-2290-1828" target="_blank" rel="noopener noreferrer"
+                            class="orcid-badge" aria-label="Yiyang Zhao ORCID profile"><img
+                                src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"
+                                width="16" height="16"></a>
+                    </div>
+                    <a href="https://orcid.org/0009-0000-2290-1828" class="author-name" target="_blank"
+                        aria-label="Yiyang Zhao ORCID profile">Yiyang Zhao<sup>1,2</sup></a>
+                    <div class="author-title">Doutorando em Física @ MIT</div>
+                </div>
+                <div class="author-card">
+                    <div class="author-img-wrap">
+                        <a href="https://physics.mit.edu/faculty/philip-harris/" target="_blank"
+                            style="display:block;line-height:0;"><img src="../images/author_philip.jpg?v=3"
+                                class="author-image" onerror="this.src='../images/placeholder_thumb.png'"
+                                alt="Philip Harris"></a>
+                        <a href="https://orcid.org/0000-0001-8189-3741" target="_blank" rel="noopener noreferrer"
+                            class="orcid-badge" aria-label="Philip Harris ORCID profile"><img
+                                src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"
+                                width="16" height="16"></a>
+                    </div>
+                    <a href="https://physics.mit.edu/faculty/philip-harris/" class="author-name" target="_blank"
+                        aria-label="Philip Harris MIT Profile">Philip
+                        Harris<sup>1,2</sup></a>
+                    <div class="author-title"><span class="mobile-hide">Professor Associado<br>de Física @
+                            MIT</span><span class="mobile-show">Prof. Assoc. de Física @ MIT</span></div>
+                </div>
+            </div>
+
+            <div class="institutions animate delay-1">
+                <sup>1</sup> <span class="mobile-hide">Departamento de Física, </span><a href="https://web.mit.edu/lns/"
+                    target="_blank" rel="noopener noreferrer"><span class="mobile-hide">Instituto de Tecnologia de Massachusetts (MIT)</span><span class="mobile-show">MIT</span></a><br class="mobile-hide"><span
+                    class="mobile-show">&nbsp;&nbsp;&nbsp;</span>
+                <sup>2</sup> <a href="https://iaifi.org/" target="_blank" rel="noopener noreferrer"><span
+                        class="mobile-hide">Instituto de IA da NSF para Inteligência Artificial e Interações Fundamentais</span><span
+                        class="mobile-show">IAIFI</span></a><br class="mobile-hide"><span
+                    class="mobile-show">&nbsp;&nbsp;&nbsp;</span>
+                <sup>3</sup> <a href="https://home.cern/" target="_blank" rel="noopener noreferrer">CERN</a><br
+                    class="mobile-hide">
+                <span class="mobile-show">&nbsp;&nbsp;</span><span class="equal-contribution">∗ Estes autores contribuíram igualmente.</span>
+            </div>
+
+            <p class="abstract-text animate delay-2">Agentes de IA baseados em grandes modelos de linguagem já conseguem
+                executar de forma autônoma partes substanciais do fluxo de análise em física de altas energias (HEP),
+                com um mínimo de insumos preparados por especialistas. Dado o acesso a um conjunto de dados de HEP, a um
+                framework de execução e a um corpus da literatura experimental anterior, verificamos que o Claude Code
+                consegue automatizar todas as etapas de uma análise típica: seleção de eventos, estimativa dos processos
+                de fundo, quantificação de incertezas, inferência estatística e redação do artigo. Argumentamos que a
+                comunidade experimental de HEP está subestimando a capacidade atual desses sistemas, e que a maioria dos
+                fluxos agênticos propostos é restrita demais em escopo ou amarrada a estruturas de análise
+                específicas.</p>
+            <p class="abstract-text animate delay-2">Apresentamos um framework de prova de conceito, o <strong>Just Furnish
+                    Context</strong> (JFC), que integra agentes de análise autônomos com recuperação de conhecimento a
+                partir da literatura e revisão por múltiplos agentes, e mostramos que isso basta para planejar, executar
+                e documentar uma análise de física de altas energias com credibilidade. Demonstramos isso realizando
+                análises com dados abertos do ALEPH, do DELPHI e do CMS, cobrindo medidas eletrofracas, de QCD e do bóson
+                de Higgs. Dois desses resultados são apresentados em forma condensada de artigo curto — um
+                $H \to \tau^+\tau^-$ com dados abertos do Run 1 do CMS, para demonstrar o desempenho em um resultado
+                bem estabelecido, e a primeira medida do plano de Lund em dados do LEP — um resultado genuinamente
+                inédito e, até onde sabemos, o primeiro produzido de forma autônoma por um agente de IA.</p>
+            <p class="abstract-text animate delay-2">Em vez de substituir físicos, essas ferramentas prometem retirar do
+                caminho o trabalho técnico repetitivo de desenvolver código de análise, liberando pesquisadores para se
+                concentrarem na compreensão física, no desenvolvimento de métodos realmente novos e na validação
+                rigorosa. Diante desses avanços, defendemos novas estratégias para a forma como a comunidade forma
+                estudantes, organiza os esforços de análise e aloca a expertise humana.</p>
+            <div class="vision-figure animate delay-2">
+                <img src="../images/vision_workflow.png?v=1" alt="Fluxo de trabalho de agente de IA comparado ao fluxo típico de análise em HEP">
+                <p class="vision-caption">
+                    <strong>Figura 1:</strong> Diagrama de como o fluxo de trabalho de um agente de IA (JFC) espelha o
+                    fluxo típico de análise em física de altas energias.
+                </p>
+            </div>
+
+
+            <div class="disclaimer animate delay-2">
+                <strong>Aviso:</strong> As análises automatizadas e os resultados científicos apresentados abaixo ainda
+                não passaram por revisão por pares nem pela revisão tradicional de uma colaboração experimental.
+            </div>
+
+            <div class="preprint-info animate delay-3">
+                Preprint publicado no arXiv (23 de março de 2026) <br>
+                <span>Submetido para publicação em 18 de junho de 2026</span>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;" class="animate delay-2">
+                <a href="https://arxiv.org/abs/2603.20179" class="btn btn-primary" target="_blank"
+                    rel="noopener noreferrer">Ler no arXiv</a>
+                <a href="https://www.alphaxiv.org/overview/2603.20179v1" class="btn btn-accent" target="_blank"
+                    rel="noopener noreferrer">Ler no alphaXiv</a>
+                <a href="https://github.com/jfc-mit" class="btn btn-github" target="_blank"
+                    rel="noopener noreferrer">Ver no GitHub</a>
+            </div>
+        </header>
+
+        <div class="mobile-nav animate delay-2">
+            Ir para:
+            <a href="#aleph">ALEPH</a>
+            <a href="#delphi">DELPHI</a>
+            <a href="#cms">CMS</a>
+        </div>
+
+        <div class="experiments-layout">
+
+            <!-- Column 1: ALEPH -->
+            <div class="experiment-col" id="aleph">
+                <h2 class="experiment-header animate delay-2"><a href="https://home.cern/science/experiments/aleph"
+                        target="_blank">ALEPH</a>
+                </h2>
+
+                <!-- 1. Z Lineshape -->
+                <div class="card animate delay-3">
+                    <div class="card-thumbnail"><a href="https://github.com/jfc-mit/analysis_aleph_z_lineshape"
+                            target="_blank"><img src="../images/zlineshape.png?v=60"
+                                onerror="this.src='../images/placeholder_thumb.png'"
+                                alt="Miniatura do PDF: lineshape do bóson Z"></a>
+                    </div>
+                    <h3>Lineshape do bóson Z</h3>
+                    <p>Medir as propriedades do bóson Z — massa, largura total e seção de choque hadrônica no pico —
+                        a partir de uma varredura em energia (lineshape), junto com o número de espécies de neutrinos
+                        leves extraído da largura invisível. Os eventos são classificados em estados finais hadrônicos e
+                        leptônicos, e razões de contagem independentes da luminosidade vinculam as larguras parciais.</p>
+                    <div class="card-actions">
+                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_aleph_z_lineshape/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v1.pdf"
+                            download class="btn btn-secondary" aria-label="Ver a nota de análise em PDF"
+                            target="_blank">Nota de análise (PDF)</a>
+                        <a href="https://github.com/jfc-mit/analysis_aleph_z_lineshape" class="btn btn-secondary"
+                            aria-label="Ver a nota de análise em PDF" target="_blank">Repositório no GitHub</a>
+                    </div>
+                </div>
+
+                <!-- 2. Lund Jet Plane -->
+                <div class="card animate delay-3">
+                    <div class="card-thumbnail"><a href="https://github.com/jfc-mit/analysis_aleph_lund_plane"
+                            target="_blank"><img src="../images/lund_jet_plane.png?v=60"
+                                onerror="this.src='../images/placeholder_thumb.png'"
+                                alt="Miniatura do PDF: plano de Lund"></a>
+                    </div>
+                    <h3>Plano de Lund</h3>
+                    <p>Medir com alta precisão a densidade do plano de Lund primário usando dados arquivados de
+                        colisões $e^+e^-$ coletados no pico do Z. O observável isola propriedades fundamentais do padrão
+                        de radiação da QCD ao mapear as emissões no espaço de fase cinemático. Os resultados passam por
+                        unfolding completo, corrigindo efeitos de detector, e são comparados aos principais geradores de
+                        eventos de Monte Carlo.</p>
+                    <div class="card-actions">
+                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_aleph_lund_plane/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v1.pdf"
+                            download class="btn btn-secondary" aria-label="Ver a nota de análise em PDF"
+                            target="_blank">Nota de análise (PDF)</a>
+                        <a href="https://github.com/jfc-mit/analysis_aleph_lund_plane" class="btn btn-secondary"
+                            aria-label="Ver a nota de análise em PDF" target="_blank">Repositório no GitHub</a>
+                    </div>
+                </div>
+
+                <!-- 3. EEC Correlators -->
+                <div class="card animate delay-4">
+                    <div class="card-thumbnail"><a href="https://github.com/jfc-mit/analysis_aleph_eec_correlators"
+                            target="_blank"><img src="../images/eec_correlators.png?v=60"
+                                onerror="this.src='../images/placeholder_thumb.png'"
+                                alt="Miniatura do PDF: correlacionadores EEC"></a>
+                    </div>
+                    <h3>Correlacionadores EEC</h3>
+                    <p>Medir os correlacionadores energia-energia de dois e três pontos (E2C, E3C), sua razão e a
+                        assimetria do correlacionador energia-energia (AEEC) em decaimentos hadrônicos do Z. Essas
+                        correlações angulares ponderadas pela energia sondam a dinâmica da QCD nos limites colinear e
+                        back-to-back e a transição para a hadronização; a razão E3C/E2C ainda suprime a sensibilidade à
+                        normalização e à hadronização. Os dados em nível de detector passam por unfolding até o nível de
+                        partícula e são comparados a cálculos de precisão e a geradores modernos de chuveiro
+                        partônico.</p>
+                    <div class="card-actions">
+                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_aleph_eec_correlators/main/phase4_inference/4c_observed/outputs/ANALYSIS_NOTE_4c_v1.pdf"
+                            download class="btn btn-secondary" aria-label="Ver a nota de análise em PDF"
+                            target="_blank">Nota de análise (PDF)</a>
+                        <a href="https://github.com/jfc-mit/analysis_aleph_eec_correlators" class="btn btn-secondary"
+                            aria-label="Ver a nota de análise em PDF" target="_blank">Repositório no GitHub</a>
+                    </div>
+                </div>
+
+                <!-- 4. RB RC AFB -->
+                <div class="card animate delay-4">
+                    <div class="card-thumbnail"><a href="https://github.com/jfc-mit/analysis_aleph_z_heavy_flavour" target="_blank"><img
+                                src="../images/rb_rc_afb.png?v=60" onerror="this.src='../images/placeholder_thumb.png'"
+                                alt="Miniatura do PDF: R_b, R_c e A_FB"></a>
+                    </div>
+                    <h3>Observáveis eletrofracos de sabor pesado</h3>
+                    <p>Medir simultaneamente as larguras parciais de decaimento em sabores pesados ($R_b$, $R_c$) e a
+                        assimetria frente-trás ($A_\text{FB}^b$) do bóson Z. Para isolar de forma confiável os
+                        decaimentos de quarks bottom e charm, a análise usa um algoritmo de identificação por parâmetro
+                        de impacto que reconhece vértices secundários deslocados. Isso constitui um teste de precisão do
+                        setor eletrofraco do Modelo Padrão.</p>
+                    <div class="card-actions">
+                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_aleph_z_heavy_flavour/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v1.pdf"
+                            download class="btn btn-secondary" aria-label="Ver a nota de análise em PDF"
+                            target="_blank">Nota de análise (PDF)</a>
+                        <a href="https://github.com/jfc-mit/analysis_aleph_z_heavy_flavour" class="btn btn-secondary"
+                            aria-label="Ver a nota de análise em PDF" target="_blank">Repositório no GitHub</a>
+                    </div>
+                </div>
+
+                <!-- 5. Event Shapes & alpha_s -->
+                <div class="card animate delay-4">
+                    <div class="card-thumbnail"><a href="https://github.com/jfc-mit/analysis_aleph_eventshapes_alphas"
+                            target="_blank"><img src="../images/eventshapes_alphas.png?v=60"
+                                onerror="this.src='../images/placeholder_thumb.png'"
+                                alt="Miniatura do PDF: event shapes e alpha_s"></a>
+                    </div>
+                    <h3>Event shapes e $\alpha_s$</h3>
+                    <p>Determinar a constante de acoplamento forte $\alpha_s(M_Z)$ a partir de seis distribuições
+                        clássicas de event shapes — thrust, massa do jato pesado, os broadenings total e do jato largo,
+                        o parâmetro $C$ e a resolução $y_{23}$ de Durham — em decaimentos hadrônicos do Z. As
+                        distribuições passam por unfolding até o nível de partícula e são ajustadas a previsões de QCD
+                        em NNLO+NLL, extraindo $\alpha_s$ junto com as correções de potência não perturbativas e
+                        comparando com a média mundial.</p>
+                    <div class="card-actions">
+                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_aleph_eventshapes_alphas/main/phase5_documentation/outputs/ANALYSIS_NOTE_5_v1.pdf"
+                            download class="btn btn-secondary" aria-label="Ver a nota de análise em PDF"
+                            target="_blank">Nota de análise (PDF)</a>
+                        <a href="https://github.com/jfc-mit/analysis_aleph_eventshapes_alphas" class="btn btn-secondary"
+                            aria-label="Ver o repositório no GitHub" target="_blank">Repositório no GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: DELPHI -->
+            <div class="experiment-col" id="delphi">
+                <h2 class="experiment-header animate delay-3"><a href="https://home.cern/science/experiments/delphi"
+                        target="_blank">DELPHI</a>
+                </h2>
+                <p class="exploratory-note animate delay-3">Execuções exploratórias anteriores, feitas com o Claude Opus&nbsp;4.6.
+                    Elas ilustram o alcance do framework, mas <strong>não</strong> são apresentadas no artigo como
+                    medidas validadas; seus repositórios estão arquivados e não são públicos.</p>
+
+                <!-- 1. N_nu -->
+                <div class="card animate delay-4">
+                    <div class="card-thumbnail"><img src="../images/nnu.png?v=20"
+                            onerror="this.src='../images/placeholder_thumb.png'"
+                            alt="Miniatura do PDF: N_nu a partir de Gamma_inv">
+                    </div>
+                    <h3>$N_\nu$ a partir de $\Gamma_\text{inv}$</h3>
+                    <p>Determinar o número de gerações de neutrinos leves ($N_\nu$) medindo a largura de decaimento
+                        invisível do bóson Z. A análise subtrai as larguras parciais visíveis, hadrônica e leptônica, da
+                        largura total do Z obtida por ajustes do lineshape. O valor final extraído testa a estrutura
+                        fundamental do Modelo Padrão ao confirmar a existência de exatamente três famílias ativas de
+                        neutrinos.</p>
+                    <div class="card-actions">
+                        <span class="btn btn-disabled" aria-disabled="true">Arquivado &mdash; não público</span>
+                    </div>
+                </div>
+
+                <!-- 2. Lund Jet Plane -->
+                <div class="card animate delay-5">
+                    <div class="card-thumbnail"><img src="../images/lund_plane_delphi.png?v=20"
+                            onerror="this.src='../images/placeholder_thumb.png'"
+                            alt="Miniatura do PDF: plano de Lund (DELPHI)">
+                    </div>
+                    <h3>Plano de Lund</h3>
+                    <p>Uma medida independente da densidade do plano de Lund primário usando o conjunto de dados do
+                        detector DELPHI, que serve como verificação cruzada essencial dos resultados do ALEPH. A análise
+                        constrói as coordenadas das emissões partônicas para mapear a intrincada estrutura das
+                        ramificações da QCD de forma independente de modelo. As observações após unfolding evidenciam a
+                        robustez com que agentes de IA reproduzem medidas complexas e de alta dimensionalidade em
+                        conjuntos de dados de colaborações diferentes.</p>
+                    <div class="card-actions">
+                        <span class="btn btn-disabled" aria-disabled="true">Arquivado &mdash; não público</span>
+                    </div>
+                </div>
+
+                <!-- 3. Event Shapes -->
+                <div class="card animate delay-5">
+                    <div class="card-thumbnail"><img src="../images/event_shapes.png"
+                            onerror="this.src='../images/placeholder_thumb.png'" alt="Miniatura do PDF: event shapes">
+                    </div>
+                    <h3>Event shapes e $\alpha_s$</h3>
+                    <p>Caracterizar o fluxo geométrico de eventos hadrônicos com seis variáveis consagradas de event
+                        shapes: thrust, massa do jato pesado, broadening total, broadening do jato largo, parâmetro C e
+                        o parâmetro de resolução de jatos. As distribuições são corrigidas por efeitos de aceitação e de
+                        hadronização. Por meio de ajustes teóricos rigorosos em NLO+NLL, obtém-se uma determinação
+                        precisa da constante de acoplamento forte $\alpha_s(M_Z)$.</p>
+                    <div class="card-actions">
+                        <span class="btn btn-disabled" aria-disabled="true">Arquivado &mdash; não público</span>
+                    </div>
+                </div>
+
+                <!-- 4. Jet Substructure -->
+                <div class="card animate delay-4">
+                    <div class="card-thumbnail"><img src="../images/jet_substructure.png"
+                            onerror="this.src='../images/placeholder_thumb.png'" alt="Miniatura do PDF: subestrutura de jatos">
+                    </div>
+                    <h3>Subestrutura de jatos</h3>
+                    <p>Investigar a composição interna de jatos originados de quarks leves e de decaimentos de sabores
+                        pesados usando técnicas modernas de grooming, como o Soft Drop. As medidas têm como alvo
+                        observáveis essenciais de subestrutura, como a massa do jato e as escalas de ramificação $k_T$.
+                        Isso fornece informação decisiva sobre fenômenos não perturbativos da QCD e ajuda a ajustar
+                        modelos modernos de chuveiro partônico.</p>
+                    <div class="card-actions">
+                        <span class="btn btn-disabled" aria-disabled="true">Arquivado &mdash; não público</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CMS Column -->
+            <div class="experiment-col" id="cms">
+                <h2 class="experiment-header animate delay-4"><a href="https://home.cern/science/experiments/cms"
+                        target="_blank">CMS</a>
+                </h2>
+
+                <div class="card animate delay-5">
+                    <div class="card-thumbnail"><a href="https://github.com/jfc-mit/analysis_cms_higgs_tautau"
+                            target="_blank"><img src="../images/htt.png?v=60"
+                                onerror="this.src='../images/placeholder_thumb.png'"
+                                alt="Miniatura do PDF: CMS H para tau tau"></a>
+                    </div>
+                    <h3>H &rarr; &tau;&tau;</h3>
+                    <p>Sondar diretamente o acoplamento de Yukawa do bóson de Higgs aos férmions medindo a intensidade
+                        do sinal no canal de decaimento $H \to \tau\tau$. A análise tem como alvo o estado final
+                        semileptônico $\mu\tau_h$, usando os dados abertos do CMS a 8 TeV. Um ajuste completo de
+                        verossimilhança perfilada é realizado para estabelecer uma medida robusta desse parâmetro
+                        essencial do Modelo Padrão.</p>
+                    <div class="card-actions">
+                        <a href="https://raw.githubusercontent.com/jfc-mit/analysis_cms_higgs_tautau/master/phase5_documentation/outputs/ANALYSIS_NOTE_5_v2.pdf"
+                            download class="btn btn-secondary" aria-label="Ver a nota de análise em PDF"
+                            target="_blank">Nota de análise (PDF)</a>
+                        <a href="https://github.com/jfc-mit/analysis_cms_higgs_tautau" class="btn btn-secondary"
+                            aria-label="Ver a nota de análise em PDF" target="_blank">Repositório no GitHub</a>
+                    </div>
+                    <p class="cross-model-note">Comparação indicativa entre modelos: o mesmo prompt de $H \to \tau\tau$ e o mesmo framework
+                        reexecutados com outros dois modelos condutores (o Claude Opus&nbsp;4.8 é usado em todo o
+                        artigo), recuperando resultados compatíveis, porém distintos.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/jfc-mit/analysis_cms_higgs_tautau_fable5" class="btn btn-secondary"
+                            aria-label="Repositório da reexecução com Claude Fable 5" target="_blank">Reexecução com Fable&nbsp;5</a>
+                        <a href="https://github.com/jfc-mit/analysis_cms_higgs_tautau_gpt5.5" class="btn btn-secondary"
+                            aria-label="Repositório da reexecução com GPT-5.5 Codex" target="_blank">Reexecução com GPT-5.5</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
