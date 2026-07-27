@@ -83,7 +83,7 @@ PAGE = """<!DOCTYPE html>
     </div>
     <div class="foot">
       <span><a href="/">jfc-mit.github.io</a> · <a href="/pt/" lang="pt-BR">versão em português</a></span>
-      <span>ICHEP 2026 · Natal</span>
+      <span><a href="https://arxiv.org/abs/2603.20179">arXiv:2603.20179</a></span>
     </div>
   </div>
 </body>
